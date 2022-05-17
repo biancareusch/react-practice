@@ -19,10 +19,11 @@ ReactDOM.render(
 // document.getElementById("root").append(h1);
 
 const element = <h1 className="header">This is JSX</h1>
-ReactDOM.render(element, document.getElementById("root"))
+// ReactDOM.render(element, document.getElementById("root"))
+//
+// console.log(element)
 
-console.log(element)
-// output object
+// output: object:
 // {
 //      type: "h1",
 //      key: null,
@@ -34,3 +35,36 @@ console.log(element)
 //      _owner: null,
 //      _store: {}
 // }
+
+// const page = (
+//     <div>
+//         <h1 className="header">This is JSX</h1>
+//         <p>This is a paragraph</p>
+//     </div>
+// )
+//
+// ReactDOM.render(page, document.getElementById("root"))
+
+// Challenge:
+const root = document.getElementById("root");
+const nav = (
+    <nav>
+        <h1>Example page</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
+
+ReactDOM.render(nav,root)
+
+
+
+
+
+
+
+
+
