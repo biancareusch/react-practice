@@ -1,3 +1,12 @@
 
-ReactDOM.render(<ul><li>First item</li><li>Second item</li></ul>,
+function MainContent(){
+    return (
+        <h1>Hello World!</h1>
+    )
+}
+
+ReactDOM.render(
+    <div>
+        <MainContent />
+    </div>,
     document.getElementById("root"));
