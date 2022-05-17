@@ -35,18 +35,26 @@ const element = <h1 className="header">This is JSX</h1>
 //      _owner: null,
 //      _store: {}
 // }
+const root = document.getElementById("root");
 
-// const page = (
-//     <div>
-//         <h1 className="header">This is JSX</h1>
-//         <p>This is a paragraph</p>
-//     </div>
-// )
+const page = (
+    <div>
+        <h1 className="header">My awesome website in React</h1>
+        <h3>Reasons I love React</h3>
+        <ol>
+            <li>It's composable</li>
+            <li>It's declarative</li>
+            <li>It's a hireable skill</li>
+            <li>It's actively maintained by some very skilled people</li>
+        </ol>
+    </div>
+)
 //
-// ReactDOM.render(page, document.getElementById("root"))
+// document.getElementById("root").append(JSON.stringify(page))
+ReactDOM.render(page, root)
+
 
 // Challenge:
-const root = document.getElementById("root");
 const nav = (
     <nav>
         <h1>Example page</h1>
@@ -59,6 +67,8 @@ const nav = (
 )
 
 ReactDOM.render(nav,root)
+
+// Challenge
 
 
 
